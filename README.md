@@ -77,6 +77,8 @@ The main analysis document (`SRT-MGATE-1210_BUSINESS_ANALYSIS.md`) includes:
 | File | Description |
 |------|-------------|
 | `SRT-MGATE-1210_BUSINESS_ANALYSIS.md` | Main business analysis document (v5.4) |
+| `ROASTING_AND_RESPONSE.md` | Panduan handle kritik keras dari pelanggan |
+| `FAQ_TEMPLATE.md` | Template FAQ dengan format standar |
 | `README.md` | This file - repository overview |
 | `CLAUDE.md` | AI assistant context file |
 
