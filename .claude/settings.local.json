@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c:*)",
+      "mcp__filesystem__directory_tree",
+      "Bash(pip install:*)",
+      "Bash(dir /s /b \"C:\\\\Users\\\\Administrator\\\\Music\\\\GatewaySuriotaPOC\\\\*.c\" \"C:\\\\Users\\\\Administrator\\\\Music\\\\GatewaySuriotaPOC\\\\*.h\" \"C:\\\\Users\\\\Administrator\\\\Music\\\\GatewaySuriotaPOC\\\\*.cpp\")",
+      "Bash(dir /s /b \"C:\\\\Users\\\\Administrator\\\\Music\\\\GatewaySuriotaOTA\")",
+      "Bash(dir \"C:\\\\Users\\\\Administrator\\\\Music\\\\GatewaySuriotaOTA\")",
+      "Bash(dir /s /b \"C:\\\\Users\\\\Administrator\\\\Music\\\\suriota_mobile_app\\\\*.dart\")",
+      "Bash(dir \"C:\\\\Users\\\\Administrator\\\\Music\\\\suriota_mobile_app\")",
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell:*)",
+      "Bash(git add:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "shadcn"
+  ]
+}

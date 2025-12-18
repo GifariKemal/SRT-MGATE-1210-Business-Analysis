@@ -2,8 +2,8 @@
 
 ## Panduan Menghadapi Kritik Keras dari Customer
 
-**Document Version**: 1.0
-**Last Updated**: November 29, 2025
+**Document Version**: 1.1
+**Last Updated**: December 18, 2025
 **Purpose**: Mempersiapkan tim sales menghadapi pertanyaan/kritik tajam
 
 ---
@@ -17,6 +17,7 @@
 5. [Feature Comparison](#5-feature-comparison)
 6. [Business & Company](#6-business--company)
 7. [Use Case Specific](#7-use-case-specific)
+8. [Supplier & Distributor](#8-supplier--distributor) **(NEW)**
 
 ---
 
@@ -111,7 +112,7 @@
 >
 > - PT Surya Inovasi Prioritas adalah PT resmi terdaftar
 > - Fokus di niche market (Industrial IoT) dengan demand growing
-> - Margin sehat (48-53%) untuk sustainability
+> - Margin sehat (40-41%) untuk sustainability
 > - Tidak burn money untuk growth, fokus profitability
 >
 > **Worst Case Scenario:**
@@ -321,7 +322,7 @@
 > | Marketing     | Global campaign | Targeted  | -80%    |
 > | Distribution  | Multi-layer     | Direct    | -30%    |
 > | Brand premium | High            | None      | -40%    |
-> | Margin        | 60-70%          | 48-53%    | Lower   |
+> | Margin        | 60-70%          | 40-41%    | Lower   |
 >
 > **Yang TIDAK Kami Potong:**
 >
@@ -338,19 +339,19 @@
 >
 > **Transparansi HPP:**
 >
-> - Hardware cost: Rp 1,564,912 (actual)
-> - Selling price: Rp 2,800,000
-> - Margin: 48% (reasonable, bukan excessive)
+> - COGS (Fully Loaded): Rp 1,630,000 (Non-PoE) / Rp 1,830,000 (PoE)
+> - Selling price: Rp 2,700,000 (Non-PoE) / Rp 3,100,000 (PoE)
+> - Margin: 40-41% (reasonable, bukan excessive)
 >
 > **Challenge:** Kami bisa provide component list dan datasheets. Silakan verify sendiri semua genuine.
 
 ---
 
-## ROASTING 3.2: "Rp 2.8 juta masih kemahalan untuk produk lokal!"
+## ROASTING 3.2: "Rp 2.7 juta masih kemahalan untuk produk lokal!"
 
 **Kritik:**
 
-> "Produk China di AliExpress harganya $30-50. Kenapa SURIOTA hampir $200?"
+> "Produk China di AliExpress harganya $30-50. Kenapa SURIOTA hampir $170?"
 
 **Response:**
 
@@ -367,7 +368,7 @@
 > - No technical support
 > - Shipping 2-4 minggu
 >
-> **SURIOTA Rp 2.8M ($175):**
+> **SURIOTA Rp 2.7M ($169):**
 >
 > - Modbus to MQTT gateway (lengkap)
 > - WiFi + Ethernet + BLE
@@ -381,12 +382,12 @@
 >
 > | Item               | AliExpress + DIY | SURIOTA  |
 > | ------------------ | ---------------- | -------- |
-> | Hardware           | $50              | $175     |
+> | Hardware           | $50              | $169     |
 > | Additional modules | $30-50           | $0       |
 > | Development time   | 40-80 jam        | 0        |
 > | Testing/debugging  | 20 jam           | 0        |
 > | Support cost       | High (self)      | Included |
-> | **Total**          | **$200-400+**    | **$175** |
+> | **Total**          | **$200-400+**    | **$169** |
 >
 > **Kesimpulan:** SURIOTA bukan murah atau mahal, tapi **VALUE FOR MONEY**.
 
@@ -412,16 +413,16 @@
 > - Actual market price: Rp 8-9 juta
 >
 > SURIOTA:
-> - List price: Rp 2,800,000 (real price)
+> - List price: Rp 2,700,000 (real price)
 > - Volume discount: 15-20%
-> - Your price: Rp 2,240,000 - 2,380,000
+> - Your price: Rp 2,160,000 - 2,295,000
 > ```
 >
 > **Perbandingan Final:**
 >
 > - Moxa setelah "diskon 40%": **Rp 7,200,000**
-> - SURIOTA setelah diskon 20%: **Rp 2,240,000**
-> - **Selisih: Rp 4,960,000 per unit!**
+> - SURIOTA setelah diskon 20%: **Rp 2,160,000**
+> - **Selisih: Rp 5,040,000 per unit!**
 >
 > **Filosofi Pricing Kami:**
 >
@@ -432,8 +433,8 @@
 > **Untuk 10 unit:**
 >
 > - Moxa: 10 x Rp 7.2M = Rp 72,000,000
-> - SURIOTA: 10 x Rp 2.52M = Rp 25,200,000
-> - **Hemat: Rp 46,800,000!**
+> - SURIOTA: 10 x Rp 2.43M = Rp 24,300,000 (diskon 10%)
+> - **Hemat: Rp 47,700,000!**
 
 ---
 
@@ -603,14 +604,14 @@
 >
 > | Option              | Cost        | Pros                    | Cons                  |
 > | ------------------- | ----------- | ----------------------- | --------------------- |
-> | SURIOTA + 4G Router | Rp 3.3-3.8M | Flexibility, BLE config | 2 devices             |
+> | SURIOTA + 4G Router | Rp 3.2-3.7M | Flexibility, BLE config | 2 devices             |
 > | BLIIoT BL100        | Rp 3.37M    | All-in-one              | No BLE, complex setup |
 > | Moxa AIG-101        | Rp 8.96M    | Enterprise grade        | Very expensive        |
 >
 > **SURIOTA + 4G Router:**
 >
-> - Total: Rp 2.8M + Rp 500K-1M = Rp 3.3-3.8M
-> - Masih lebih murah atau sama dengan BLIIoT
+> - Total: Rp 2.7M + Rp 500K-1M = Rp 3.2-3.7M
+> - Masih lebih murah dari BLIIoT
 > - Tetap punya advantage BLE config
 > - Router bisa di-share untuk keperluan lain
 >
@@ -666,7 +667,7 @@
 > **Kalau Butuh Lebih dari 64 Devices:**
 >
 > - Gunakan 2 unit SURIOTA (4 port total)
-> - 2 x Rp 2.8M = Rp 5.6M
+> - 2 x Rp 2.7M = Rp 5.4M
 > - Total 128 devices + redundancy + WiFi + BLE
 >
 > **Versus USR-N540:**
@@ -946,7 +947,7 @@
 > | Users            | Operators            | Management, analysts   |
 > | Data             | Real-time display    | Historical + analytics |
 > | Alert            | Local alarm          | Push notification      |
-> | Investment       | High (Rp 50-500M)    | Low (Rp 2.8M)          |
+> | Investment       | High (Rp 50-500M)    | Low (Rp 2.7M)          |
 >
 > **Parallel Operation:**
 >
@@ -967,8 +968,8 @@
 > **ROI Story:**
 >
 > - SCADA: Rp 100M investment
-> - SURIOTA: Rp 2.8M addition
-> - Remote access capability: +2.8% cost untuk 100% remote visibility
+> - SURIOTA: Rp 2.7M addition
+> - Remote access capability: +2.7% cost untuk 100% remote visibility
 >
 > **Not Replacement, Enhancement:**
 >
@@ -980,18 +981,142 @@
 
 ## Objection → One-Liner Response
 
-| Objection                | Quick Response                                                                      |
-| ------------------------ | ----------------------------------------------------------------------------------- |
-| "Brand tidak dikenal"    | "Semua brand besar juga pernah baru. Kami buktikan dengan garansi dan support."     |
-| "Produk rebrand China"   | "Design original, bisa kami tunjukkan schematic dan source code."                   |
-| "ESP32 bukan industrial" | "ESP32 certified -40 to +85°C, dipakai di jutaan industrial devices globally."      |
-| "Tidak ada isolation"    | "ESD protection 600W sudah cukup untuk 90% use case. Isolator eksternal available." |
-| "Casing plastik murahan" | "Metal akan block WiFi/BLE. Kompetitor juga pakai plastic."                         |
-| "Murah pasti murahan"    | "Murah karena direct sales dan lean operation, bukan karena potong quality."        |
-| "Support pasti lambat"   | "Tim kecil = bicara langsung dengan engineer, bukan antri di call center."          |
-| "Garansi pendek"         | "1.5 tahun lebih lama dari standard 1 tahun. Extended warranty available."          |
-| "Tidak ada 4G"           | "80% site sudah ada network. Untuk remote, tambah 4G router masih lebih murah."     |
-| "Sertifikasi belum ada"  | "Component certified, product certification Q1 2026. DoC available sekarang."       |
+| Objection                      | Quick Response                                                                      |
+| ------------------------------ | ----------------------------------------------------------------------------------- |
+| "Brand tidak dikenal"          | "Semua brand besar juga pernah baru. Kami buktikan dengan garansi dan support."     |
+| "Produk rebrand China"         | "Design original, bisa kami tunjukkan schematic dan source code."                   |
+| "ESP32 bukan industrial"       | "ESP32 certified -40 to +85°C, dipakai di jutaan industrial devices globally."      |
+| "Tidak ada isolation"          | "ESD protection 600W sudah cukup untuk 90% use case. Isolator eksternal available." |
+| "Casing plastik murahan"       | "Metal akan block WiFi/BLE. Kompetitor juga pakai plastic."                         |
+| "Murah pasti murahan"          | "Murah karena direct sales dan lean operation, bukan karena potong quality."        |
+| "Support pasti lambat"         | "Tim kecil = bicara langsung dengan engineer, bukan antri di call center."          |
+| "Garansi pendek"               | "1.5 tahun lebih lama dari standard 1 tahun. Extended warranty available."          |
+| "Tidak ada 4G"                 | "80% site sudah ada network. Untuk remote, tambah 4G router masih lebih murah."     |
+| "Sertifikasi belum ada"        | "Component certified, product certification Q1 2026. DoC available sekarang."       |
+| "Margin supplier kecil"        | "25-33% margin + MAP policy = tidak ada perang harga, compete di service."          |
+| "Takut supplier lain undercut" | "MAP policy ketat dengan enforcement. Semua jual di harga sama."                    |
+
+---
+
+# 8. SUPPLIER & DISTRIBUTOR
+
+## ROASTING 8.1: "Saya mau jadi reseller, tapi margin terlalu kecil!"
+
+**Kritik:**
+
+> "Diskon 20-25% tidak cukup untuk cover operasional toko saya. Brand lain kasih margin lebih besar."
+
+**Response:**
+
+> Mari kita hitung bersama dengan transparan:
+>
+> **Skema Supplier SURIOTA (Tier 2 - 10 unit min):**
+>
+> | Varian  | Harga Supplier | Harga Jual (MAP) | Margin               |
+> | ------- | -------------- | ---------------- | -------------------- |
+> | Non-PoE | Rp 2,025,000   | Rp 2,700,000     | **Rp 675,000 (33%)** |
+> | PoE     | Rp 2,325,000   | Rp 3,100,000     | **Rp 775,000 (33%)** |
+>
+> **Perbandingan dengan Brand Lain:**
+>
+> - Brand China: Margin 10-15%, tapi produk komoditas, perang harga
+> - Brand Enterprise: Margin 20-30%, tapi modal besar, slow moving
+> - SURIOTA: Margin 25-33%, produk unik, no price war (MAP policy)
+>
+> **Keuntungan MAP Policy:**
+>
+> - Tidak ada supplier lain yang jual lebih murah
+> - Compete di service dan expertise, bukan harga
+> - Customer tidak bisa tawar "di tempat lain lebih murah"
+>
+> **Support untuk Supplier:**
+>
+> - Marketing material (brosur, datasheet)
+> - Technical training
+> - Priority stock allocation
+> - Lead referral untuk area Anda
+>
+> **Kesimpulan:** Margin lebih sehat karena tidak ada perang harga. Rp 675K per unit x 10 unit = Rp 6.75M profit.
+
+---
+
+## ROASTING 8.2: "Takut supplier lain jual lebih murah dan rusak market!"
+
+**Kritik:**
+
+> "Bagaimana kalau ada supplier nakal yang jual dibawah harga? Nanti kami yang rugi."
+
+**Response:**
+
+> Kami menerapkan **MAP Policy** (Minimum Advertised Price) yang ketat:
+>
+> **Aturan MAP:**
+>
+> - Non-PoE: MIN Rp 2,700,000 (sama dengan harga direct SURIOTA)
+> - PoE: MIN Rp 3,100,000 (sama dengan harga direct SURIOTA)
+>
+> **Enforcement:**
+>
+> | Pelanggaran | Sanksi                       |
+> | ----------- | ---------------------------- |
+> | Pertama     | Warning + 1 bulan monitoring |
+> | Kedua       | Suspend supply 3 bulan       |
+> | Ketiga      | Terminasi kerjasama permanen |
+>
+> **Monitoring:**
+>
+> - Mystery shopper berkala
+> - Monitor marketplace listings
+> - Report dari sesama supplier
+>
+> **Komitmen SURIOTA:**
+>
+> - Kami TIDAK akan undercut supplier
+> - Direct sales SURIOTA di harga MAP
+> - Supplier compete di service, bukan harga
+>
+> **Perlindungan:** Jika ada bukti supplier lain melanggar MAP, lapor ke kami untuk enforcement.
+
+---
+
+## ROASTING 8.3: "Kalau saya beli 5 unit, nanti ada yang beli 50 unit dapat harga lebih murah?"
+
+**Kritik:**
+
+> "Tidak fair kalau supplier besar dapat harga jauh lebih murah. Kami tidak bisa compete."
+
+**Response:**
+
+> Sistem tier kami didesain fair untuk semua ukuran supplier:
+>
+> **Tier Pricing:**
+>
+> | Tier   | Min Order | Diskon | Gap |
+> | ------ | --------- | ------ | --- |
+> | Tier 1 | 5 unit    | 20%    | -   |
+> | Tier 2 | 10 unit   | 25%    | 5%  |
+> | Tier 3 | 25 unit   | 30%    | 5%  |
+>
+> **Kenapa Gap Hanya 5%:**
+>
+> - Supplier kecil tetap kompetitif
+> - Tidak ada monopoli oleh 1-2 supplier besar
+> - Gap 5% = selisih harga ~Rp 135K/unit
+>
+> **Level Playing Field:**
+>
+> - Semua supplier terikat MAP yang sama
+> - Service dan expertise jadi differentiator
+> - Area/regional exclusivity bisa dinegosiasi
+>
+> **Contoh:**
+>
+> | Supplier  | Tier   | Beli         | Jual         | Margin/unit |
+> | --------- | ------ | ------------ | ------------ | ----------- |
+> | A (kecil) | Tier 1 | Rp 2,160,000 | Rp 2,700,000 | Rp 540,000  |
+> | B (besar) | Tier 3 | Rp 1,890,000 | Rp 2,700,000 | Rp 810,000  |
+>
+> **Realita:** Supplier besar dapat margin lebih banyak per unit, tapi supplier kecil masih punya margin yang sehat (25%).
 
 ---
 
@@ -1014,6 +1139,7 @@ Ketika customer masih ragu setelah semua penjelasan:
 
 ---
 
-_Document Version: 1.0_
+_Document Version: 1.1_
 _For Internal Sales Team Use_
-_Last Updated: November 29, 2025_
+_Last Updated: December 18, 2025_
+_Changelog: Updated pricing (Rp 2.7M/3.1M, 40% margin), added Section 8 Supplier & Distributor_

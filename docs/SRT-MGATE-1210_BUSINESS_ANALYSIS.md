@@ -2,8 +2,8 @@
 
 ## Dokumen Analisis Bisnis untuk Finance & Marketing
 
-**Document Version**: 5.4
-**Last Updated**: November 29, 2025
+**Document Version**: 6.1 - Added Supplier Distribution Strategy
+**Last Updated**: December 18, 2025
 **Prepared by**: Product Development Team
 **Exchange Rate**: 1 USD = Rp 16,648 (actual) / Rp 16,000 (rounded for calculation)
 
@@ -15,24 +15,26 @@
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │                                                                             │
 │                    💰 HARGA JUAL RESMI SRT-MGATE-1210 💰                   │
+│                        (Updated: December 18, 2025)                         │
 │                                                                             │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
 │   ┌─────────────────────────────────────────────────────────────────────┐   │
 │   │  MODEL                    │  HARGA JUAL      │  MARGIN    │  HPP    │   │
 │   ├───────────────────────────┼──────────────────┼────────────┼─────────┤   │
-│   │  SRT-MGATE-1210           │  Rp 2.800.000    │  48%       │  1.45M  │   │
-│   │  (Standard - 2xRS485)     │  (~$175 USD)     │            │         │   │
+│   │  SRT-MGATE-1210           │  Rp 2.700.000    │  40%       │  1.63M  │   │
+│   │  (Standard - 2xRS485)     │  (~$169 USD)     │            │         │   │
 │   ├───────────────────────────┼──────────────────┼────────────┼─────────┤   │
-│   │  SRT-MGATE-1210-POE       │  Rp 3.500.000    │  53%       │  1.65M  │   │
-│   │  (PoE Version)            │  (~$219 USD)     │            │         │   │
+│   │  SRT-MGATE-1210-POE       │  Rp 3.100.000    │  41%       │  1.83M  │   │
+│   │  (PoE Version)            │  (~$194 USD)     │            │         │   │
 │   └─────────────────────────────────────────────────────────────────────┘   │
 │                                                                             │
 │   POSITIONING:                                                              │
-│   • 20% lebih murah dari USR-N720 (Rp 3.5M)                                 │
-│   • 17% lebih murah dari BLIIoT BL100 (Rp 3.37M)                            │
-│   • 19% lebih murah dari ICP DAS tGW-725 (Rp 3.45M)                         │
-│   • 69% lebih murah dari Moxa AIG-101 (Rp 8.96M)                            │
+│   • 23% lebih murah dari USR-N720 (Rp 3.5M)                                 │
+│   • 20% lebih murah dari BLIIoT BL100 (Rp 3.37M)                            │
+│   • 22% lebih murah dari ICP DAS tGW-725 (Rp 3.45M)                         │
+│   • 70% lebih murah dari Moxa AIG-101 (Rp 8.96M)                            │
+│   • +48% dari USR-N540 (Rp 1.82M) - justified dengan WiFi+BLE+RTC+ESD       │
 │                                                                             │
 │   USP: SATU-SATUNYA Modbus-to-MQTT gateway dengan WiFi + BLE di Indonesia   │
 │                                                                             │
@@ -69,17 +71,17 @@
 | -------------------------- | ------------------------------ |
 | **Target Market**          | Industrial IoT Indonesia       |
 | **Competitive Position**   | Mid-range dengan fitur premium |
-| **Price Point**            | Rp 2.800.000 - 3.500.000       |
-| **Gross Margin**           | 48-53%                         |
-| **Break-even**             | 134 units                      |
-| **Target Sales (2 tahun)** | 200 units (Estimated)          |
+| **Price Point**            | Rp 2.700.000 - 3.100.000       |
+| **Gross Margin**           | 40-41%                         |
+| **Break-even**             | 82 units                       |
+| **Target Sales (2 tahun)** | 100 units (Amortisasi basis)   |
 
 ### Keunggulan Kompetitif:
 
 - **SATU-SATUNYA** Modbus-to-MQTT gateway di Indonesia dengan **WiFi + BLE + Industrial Grade**
 - **Produksi Lokal** = Harga lebih kompetitif, support lebih cepat
-- **20% lebih murah** dari USR-N720 dengan fitur WiFi + BLE yang mereka tidak punya
-- **69% lebih murah** dari Moxa AIG-101 dengan fitur BLE config yang Moxa tidak punya
+- **23% lebih murah** dari USR-N720 dengan fitur WiFi + BLE yang mereka tidak punya
+- **70% lebih murah** dari Moxa AIG-101 dengan fitur BLE config yang Moxa tidak punya
 
 ---
 
@@ -89,31 +91,29 @@
 
 ### SRT-MGATE-1210 (Standard Version)
 
-| Specification       | Detail                                             |
-| ------------------- | -------------------------------------------------- |
-| **MCU**             | ESP32-S3-WROOM-1 (Dual-core 240MHz, 8MB PSRAM)     |
-| **RS-485**          | 2 ports with ESD protection, up to 32 devices/port |
-| **Ethernet**        | W5500 10/100 Mbps with magnetic isolation          |
-| **WiFi**            | 2.4GHz 802.11 b/g/n, WPA3-PSK                      |
-| **Bluetooth**       | BLE 5.0 for mobile configuration                   |
-| **RTC**             | DS3231 dengan battery backup (CR1220)              |
-| **LED Indicators**  | 9 LEDs (Status, Config, WiFi, NET, RS485, Power)   |
-| **Protocol Input**  | Modbus RTU RS485, Modbus TCP WiFi / Ethernet       |
-| **Protocol Output** | MQTT + JSON format                                 |
-| **Cloud Support**   | AWS, Datacake, Grafana, ThingsBoard, SURGE, etc.   |
-| **Power**           | 12-48V DC                                          |
-| **Temperature**     | -40°C to +75°C (Industrial Grade)                  |
-| **Mounting**        | DIN Rail / Wall Mount                              |
-| **Enclosure**       | PLA+ industrial housing                            |
-| **Dimensions**      | 110 x 90 x 58 mm                                   |
-| **Certifications**  | Rohs & CE, FCC (planned)                           |
-| **Warranty**        | 1.5 Year                                           |
-| **Support**         | Local Indonesia Support                            |
-| **Mobile App**      | Android & iOS for BLE configuration                |
-| **Firmware Updates**| OTA via BLE & Local via USB                        |
-| **Auto Failover**   | WiFi backup for Ethernet failure (Dual Connection) |
-            
-
+| Specification        | Detail                                             |
+| -------------------- | -------------------------------------------------- |
+| **MCU**              | ESP32-S3-WROOM-1 (Dual-core 240MHz, 8MB PSRAM)     |
+| **RS-485**           | 2 ports with ESD protection, up to 32 devices/port |
+| **Ethernet**         | W5500 10/100 Mbps with magnetic isolation          |
+| **WiFi**             | 2.4GHz 802.11 b/g/n, WPA3-PSK                      |
+| **Bluetooth**        | BLE 5.0 for mobile configuration                   |
+| **RTC**              | DS3231 dengan battery backup (CR1220)              |
+| **LED Indicators**   | 9 LEDs (Status, Config, WiFi, NET, RS485, Power)   |
+| **Protocol Input**   | Modbus RTU RS485, Modbus TCP WiFi / Ethernet       |
+| **Protocol Output**  | MQTT + JSON format                                 |
+| **Cloud Support**    | AWS, Datacake, Grafana, ThingsBoard, SURGE, etc.   |
+| **Power**            | 12-48V DC                                          |
+| **Temperature**      | -40°C to +75°C (Industrial Grade)                  |
+| **Mounting**         | DIN Rail / Wall Mount                              |
+| **Enclosure**        | PLA+ industrial housing                            |
+| **Dimensions**       | 110 x 90 x 58 mm                                   |
+| **Certifications**   | Rohs & CE, FCC (planned)                           |
+| **Warranty**         | 1.5 Year                                           |
+| **Support**          | Local Indonesia Support                            |
+| **Mobile App**       | Android & iOS for BLE configuration                |
+| **Firmware Updates** | OTA via BLE & Local via USB                        |
+| **Auto Failover**    | WiFi backup for Ethernet failure (Dual Connection) |
 
 ### SRT-MGATE-1210-POE (PoE Version)
 
@@ -128,50 +128,75 @@
 
 ## Analisis Biaya Produksi
 
-### Data Aktual HPP (1 pcs production)
+### Data Aktual HPP (Updated December 2025)
 
-> **Sumber**: Data produksi aktual, 2025
+> **Sumber**: Data produksi aktual dari BOM LCSC + Kalkulasi Internal
 
-| Item                            | USD        | IDR (Kurs 16,648) |
-| ------------------------------- | ---------- | ----------------- |
-| Hardware (PCB + Electronics)    | $88.00     | Rp 1,465,024      |
-| Hardware (Mechanical/Enclosure) | $6.00      | Rp 99,888         |
-| **Total Hardware**              | **$94.00** | **Rp 1,564,912**  |
+#### Bill of Materials (BOM) - LCSC Quotation
 
-_Catatan: Belum termasuk manpower + overhead produksi + R&D Firmware & Software_
+| Komponen               | Total Biaya  | Qty Produksi | Per Unit         | Keterangan                       |
+| ---------------------- | ------------ | ------------ | ---------------- | -------------------------------- |
+| PCBA (Electronics)     | Rp 7,400,640 | 5 pcs        | **Rp 1,480,128** | Komponen LCSC ~$45.33 + Assembly |
+| Enclosure 3D Print     | Rp 281,250   | 5 pcs        | **Rp 56,250**    | PLA+ Industrial Housing          |
+| PCB Design             | Rp 8,921,000 | 100 pcs      | Rp 89,210        | Amortisasi desain PCB            |
+| Enclosure Design 3D    | Rp 429,400   | 100 pcs      | Rp 4,294         | Amortisasi desain enclosure      |
+| **Sub-total Hardware** | -            | -            | **Rp 1,629,882** |                                  |
+
+#### Selisih Versi PoE
+
+| Item                    | Biaya       |
+| ----------------------- | ----------- |
+| PoE Module + Components | +Rp 200,000 |
+
+#### COGS Summary (Hardware Only)
+
+| Model       | COGS Hardware                   |
+| ----------- | ------------------------------- |
+| **Non-PoE** | **Rp 1,429,882** ≈ Rp 1,430,000 |
+| **PoE**     | **Rp 1,629,882** ≈ Rp 1,630,000 |
 
 ---
 
-### Kalkulasi COGS untuk Volume 200 pcs
+### R&D Development Cost Analysis
 
-| Cost Component    | 1 pcs        | 200 pcs (est. -25%) | Notes                 |
-| ----------------- | ------------ | ------------------- | --------------------- |
-| Hardware Cost     | Rp 1,564,912 | Rp 1,173,684        | Volume discount 25%   |
-| Labor (10%)       | -            | Rp 117,368          | Assembly + QC         |
-| Overhead (5%)     | -            | Rp 58,684           | Facilities, utilities |
-| **COGS Standard** | -            | **Rp 1,350,000**    | Rounded               |
-| PoE Module        | -            | +Rp 200,000         | Additional component  |
-| **COGS PoE**      | -            | **Rp 1,550,000**    | Rounded               |
+> **Sumber**: Analisis codebase aktual (December 2025)
+
+#### Scope Development
+
+| Project              | Files          | Lines of Code  | Kompleksitas  |
+| -------------------- | -------------- | -------------- | ------------- |
+| Firmware (ESP32-S3)  | 68 C/C++       | 25,959 LOC     | Sangat Tinggi |
+| Mobile App (Flutter) | 83 Dart        | 20,889 LOC     | Tinggi        |
+| **TOTAL**            | **151+ files** | **46,848 LOC** | -             |
+
+#### Estimasi Biaya Development (Full Cost)
+
+| Item                                  | Estimasi           |
+| ------------------------------------- | ------------------ |
+| Firmware (ESP32, FreeRTOS, BLE, MQTT) | Rp 180,000,000     |
+| Mobile App (Flutter, Android + iOS)   | Rp 90,000,000      |
+| **Total Full R&D**                    | **Rp 270,000,000** |
+
+#### Strategi Amortisasi R&D
+
+R&D adalah **sunk cost** yang sudah diinvestasikan. Untuk competitive pricing, digunakan **partial amortization**:
+
+| Item                 | Full Cost   | Amortisasi     | Per Unit (100 pcs) |
+| -------------------- | ----------- | -------------- | ------------------ |
+| Firmware             | Rp 180 juta | ~11%           | Rp 200,000         |
+| Mobile App           | Rp 90 juta  | ~0%            | Rp 0 (value-add)   |
+| **Total Amortisasi** | -           | **Rp 20 juta** | **Rp 200,000**     |
+
+_Catatan: Mobile App tidak dibebankan karena merupakan value-add untuk customer (USP)_
 
 ---
-
-### R&D Amortization
-
-| Item                    | Amount         |
-| ----------------------- | -------------- |
-| Total R&D Investment    | Rp 20,000,000  |
-| (Firmware + Mobile App) |                |
-| Target Sales Volume     | 200 units      |
-| **R&D per Unit**        | **Rp 100,000** |
-
-## _Catatan: Estimated_
 
 ### Fully Loaded Cost Summary
 
-| Model                  | Manufacturing COGS | R&D Amortization | **Fully Loaded Cost** |
-| ---------------------- | ------------------ | ---------------- | --------------------- |
-| **SRT-MGATE-1210**     | Rp 1,350,000       | Rp 100,000       | **Rp 1,450,000**      |
-| **SRT-MGATE-1210-POE** | Rp 1,550,000       | Rp 100,000       | **Rp 1,650,000**      |
+| Model                  | Hardware COGS | R&D Amortisasi | **Fully Loaded Cost** |
+| ---------------------- | ------------- | -------------- | --------------------- |
+| **SRT-MGATE-1210**     | Rp 1,430,000  | Rp 200,000     | **Rp 1,630,000**      |
+| **SRT-MGATE-1210-POE** | Rp 1,630,000  | Rp 200,000     | **Rp 1,830,000**      |
 
 ---
 
@@ -228,7 +253,7 @@ _Catatan: Belum termasuk manpower + overhead produksi + R&D Firmware & Software_
 
 | Aspek         | USR-N720     | SURIOTA      | Winner             |
 | ------------- | ------------ | ------------ | ------------------ |
-| Harga         | Rp 3,500,000 | Rp 2,800,000 | **SURIOTA (-20%)** |
+| Harga         | Rp 3,500,000 | Rp 2,700,000 | **SURIOTA (-23%)** |
 | WiFi          | ❌           | ✅           | **SURIOTA**        |
 | BLE Config    | ❌           | ✅           | **SURIOTA**        |
 | Auto Failover | ❌           | ✅           | **SURIOTA**        |
@@ -278,7 +303,7 @@ _Catatan: Belum termasuk manpower + overhead produksi + R&D Firmware & Software_
 
 | Aspek          | USR-N540     | SURIOTA      | Winner              |
 | -------------- | ------------ | ------------ | ------------------- |
-| Harga          | Rp 1,820,000 | Rp 2,800,000 | **USR-N540 (-35%)** |
+| Harga          | Rp 1,820,000 | Rp 2,700,000 | **USR-N540 (-33%)** |
 | WiFi           | ❌           | ✅           | **SURIOTA**         |
 | BLE Config     | ❌           | ✅           | **SURIOTA**         |
 | RS-485 Ports   | 4            | 2            | **USR-N540**        |
@@ -286,7 +311,7 @@ _Catatan: Belum termasuk manpower + overhead produksi + R&D Firmware & Software_
 | RTC Battery    | ❌           | ✅           | **SURIOTA**         |
 | Auto Failover  | ❌           | ✅           | **SURIOTA**         |
 
-**Catatan**: USR-N540 lebih murah tapi untuk aplikasi yang butuh WiFi backup dan BLE config, SURIOTA lebih cocok.
+**Catatan**: USR-N540 lebih murah tapi untuk aplikasi yang butuh WiFi backup dan BLE config, SURIOTA lebih cocok. Selisih +48% justified dengan fitur premium.
 
 ---
 
@@ -334,7 +359,7 @@ _Catatan: Belum termasuk manpower + overhead produksi + R&D Firmware & Software_
 
 | Aspek            | BLIIoT BL100 | SURIOTA      | Winner             |
 | ---------------- | ------------ | ------------ | ------------------ |
-| Harga            | Rp 3,373,000 | Rp 2,800,000 | **SURIOTA (-17%)** |
+| Harga            | Rp 3,373,000 | Rp 2,700,000 | **SURIOTA (-20%)** |
 | WiFi             | Optional     | ✅ Built-in  | **SURIOTA**        |
 | BLE Config       | ❌           | ✅           | **SURIOTA**        |
 | 4G Cellular      | ✅           | ❌           | **BLIIoT**         |
@@ -388,11 +413,11 @@ _Catatan: Belum termasuk manpower + overhead produksi + R&D Firmware & Software_
 
 | Aspek         | Moxa AIG-101  | SURIOTA       | Winner             |
 | ------------- | ------------- | ------------- | ------------------ |
-| Harga         | Rp 8,956,000  | Rp 2,800,000  | **SURIOTA (-69%)** |
+| Harga         | Rp 8,956,000  | Rp 2,700,000  | **SURIOTA (-70%)** |
 | WiFi          | ❌ (LTE only) | ✅            | **SURIOTA**        |
 | BLE Config    | ❌            | ✅            | **SURIOTA**        |
 | Azure/AWS SDK | ✅ Built-in   | ✅ Compatible | Tie                |
-| Warranty      | 5 years       | 1.5 year        | **Moxa**           |
+| Warranty      | 5 years       | 1.5 year      | **Moxa**           |
 | Local Support | Import        | ✅ Local      | **SURIOTA**        |
 
 ---
@@ -464,7 +489,7 @@ _Catatan: Belum termasuk manpower + overhead produksi + R&D Firmware & Software_
 
 | Feature             | USR-N540     | USR-N720    | BLIIoT BL100 | ICP DAS tGW-725  | Moxa AIG-101 | **SURIOTA**        |
 | ------------------- | ------------ | ----------- | ------------ | ---------------- | ------------ | ------------------ |
-| **Harga Tokopedia** | **Rp 1.82M** | **Rp 3.5M** | **Rp 3.37M** | **Rp 3.45M**     | **Rp 8.96M** | **Rp 2.8M**        |
+| **Harga Tokopedia** | **Rp 1.82M** | **Rp 3.5M** | **Rp 3.37M** | **Rp 3.45M**     | **Rp 8.96M** | **Rp 2.7M**        |
 | **Type**            | MQTT GW      | MQTT GW     | MQTT GW      | **TCP/RTU only** | MQTT GW      | **MQTT GW**        |
 |                     |              |             |              |                  |              |                    |
 | **RS-485 Ports**    | 4            | 2           | 1            | 2                | 2            | **2**              |
@@ -538,28 +563,63 @@ Keterangan:
 
 ## Strategi Penetapan Harga
 
-### Competitive Positioning
+### Analisis Opsi Harga
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        ANALISIS OPSI STRATEGI HARGA                         │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  OPSI A: Harga Agresif (Margin 30%)                                        │
+│  ─────────────────────────────────────                                      │
+│  Non-PoE: Rp 2,330,000 (~$146)    │  PoE: Rp 2,615,000 (~$163)             │
+│  ✅ Sangat kompetitif, undercut semua competitor                           │
+│  ❌ Margin tipis, risiko jika COGS naik, sulit naik harga                  │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  OPSI B: Balanced (Margin 40%) ✓ DIPILIH                                   │
+│  ─────────────────────────────────────────                                  │
+│  Non-PoE: Rp 2,700,000 (~$169)    │  PoE: Rp 3,100,000 (~$194)             │
+│  ✅ Margin cukup untuk overhead & contingency                              │
+│  ✅ Ruang untuk diskon volume, masih kompetitif                            │
+│  ✅ 23% lebih murah dari USR-N720, 20% dari BLIIoT                         │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  OPSI C: Premium Positioning (Margin 48-53%)                               │
+│  ─────────────────────────────────────────────                              │
+│  Non-PoE: Rp 3,135,000 (~$196)    │  PoE: Rp 3,875,000 (~$242)             │
+│  ✅ Margin tinggi untuk R&D future products                                │
+│  ❌ Mendekati/melebihi harga kompetitor, sulit justify                     │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+```
+
+### Competitive Positioning (dengan Harga Baru)
 
 | Competitor   | Harga        | vs SURIOTA | SURIOTA Advantage                           |
 | ------------ | ------------ | ---------- | ------------------------------------------- |
-| USR-N540     | Rp 1,820,000 | +54%       | WiFi, BLE, ESD, RTC, 9LED, Failover         |
-| USR-N720     | Rp 3,500,000 | -20%       | WiFi, BLE, RTC, Failover, Local Support     |
-| BLIIoT BL100 | Rp 3,373,000 | -17%       | WiFi standard, BLE, RTC, Simpler setup      |
-| Moxa AIG-101 | Rp 8,956,000 | -69%       | WiFi, BLE, RTC, Local Support, MUCH cheaper |
+| USR-N540     | Rp 1,820,000 | +48%       | WiFi, BLE, ESD, RTC, 9LED, Failover         |
+| USR-N720     | Rp 3,500,000 | **-23%**   | WiFi, BLE, RTC, Failover, Local Support     |
+| BLIIoT BL100 | Rp 3,373,000 | **-20%**   | WiFi standard, BLE, RTC, Simpler setup      |
+| ICP DAS tGW  | Rp 3,450,000 | **-22%**   | MQTT native, WiFi, BLE, Local Support       |
+| Moxa AIG-101 | Rp 8,956,000 | **-70%**   | WiFi, BLE, RTC, Local Support, MUCH cheaper |
 
-### Rekomendasi Harga
+### Rekomendasi Harga Final
 
 | Model                  | Harga Jual       | Fully Loaded Cost | Gross Profit | **Margin** |
 | ---------------------- | ---------------- | ----------------- | ------------ | ---------- |
-| **SRT-MGATE-1210**     | **Rp 2,800,000** | Rp 1,450,000      | Rp 1,350,000 | **48%**    |
-| **SRT-MGATE-1210-POE** | **Rp 3,500,000** | Rp 1,650,000      | Rp 1,850,000 | **53%**    |
+| **SRT-MGATE-1210**     | **Rp 2,700,000** | Rp 1,630,000      | Rp 1,070,000 | **40%**    |
+| **SRT-MGATE-1210-POE** | **Rp 3,100,000** | Rp 1,830,000      | Rp 1,270,000 | **41%**    |
 
 ### Justifikasi Harga
 
-1. **20% lebih murah dari USR-N720** (Rp 3.5M) - dengan fitur WiFi + BLE + RTC yang USR tidak punya
-2. **17% lebih murah dari BLIIoT** (Rp 3.37M) - dengan WiFi standard + BLE + RTC + simpler setup
-3. **69% lebih murah dari Moxa AIG-101** (Rp 8.96M) - dengan BLE config + RTC yang Moxa tidak punya
-4. **Premium vs USR-N540** (+54%) - justified karena WiFi, BLE, ESD protection, RTC, 9 LED, auto-failover
+1. **23% lebih murah dari USR-N720** (Rp 3.5M) - dengan fitur WiFi + BLE + RTC yang USR tidak punya
+2. **20% lebih murah dari BLIIoT** (Rp 3.37M) - dengan WiFi standard + BLE + RTC + simpler setup
+3. **70% lebih murah dari Moxa AIG-101** (Rp 8.96M) - dengan BLE config + RTC yang Moxa tidak punya
+4. **Premium vs USR-N540** (+48%) - justified karena WiFi, BLE, ESD protection, RTC, 9 LED, auto-failover
+5. **Free Mobile App** - nilai tambah Rp 90 juta development, tidak dibebankan ke customer
 
 ---
 
@@ -569,20 +629,181 @@ Keterangan:
 
 | Quantity  | Discount | Standard     | PoE          |
 | --------- | -------- | ------------ | ------------ |
-| 1-4 pcs   | 0%       | Rp 2,800,000 | Rp 3,500,000 |
-| 5-9 pcs   | 5%       | Rp 2,660,000 | Rp 3,325,000 |
-| 10-24 pcs | 10%      | Rp 2,520,000 | Rp 3,150,000 |
-| 25-49 pcs | 15%      | Rp 2,380,000 | Rp 2,975,000 |
-| 50-99 pcs | 18%      | Rp 2,296,000 | Rp 2,870,000 |
-| 100+ pcs  | 20%      | Rp 2,240,000 | Rp 2,800,000 |
+| 1-4 pcs   | 0%       | Rp 2,700,000 | Rp 3,100,000 |
+| 5-9 pcs   | 5%       | Rp 2,565,000 | Rp 2,945,000 |
+| 10-24 pcs | 10%      | Rp 2,430,000 | Rp 2,790,000 |
+| 25-49 pcs | 15%      | Rp 2,295,000 | Rp 2,635,000 |
+| 50-99 pcs | 18%      | Rp 2,214,000 | Rp 2,542,000 |
+| 100+ pcs  | 20%      | Rp 2,160,000 | Rp 2,480,000 |
 
 #### Distributor/Reseller
 
 | Tier   | Discount | Min Order | Standard     | PoE          | Their Margin |
 | ------ | -------- | --------- | ------------ | ------------ | ------------ |
-| Bronze | 25%      | 25 pcs    | Rp 2,100,000 | Rp 2,625,000 | 25%          |
-| Silver | 30%      | 50 pcs    | Rp 1,960,000 | Rp 2,450,000 | 30%          |
-| Gold   | 35%      | 100 pcs   | Rp 1,820,000 | Rp 2,275,000 | 35%          |
+| Bronze | 25%      | 25 pcs    | Rp 2,025,000 | Rp 2,325,000 | 25%          |
+| Silver | 30%      | 50 pcs    | Rp 1,890,000 | Rp 2,170,000 | 30%          |
+| Gold   | 35%      | 100 pcs   | Rp 1,755,000 | Rp 2,015,000 | 35%          |
+
+---
+
+# Strategi Distribusi dengan Supplier
+
+## Model Distribusi 5 Supplier
+
+### Biaya Tambahan per Unit (Distribution Ready)
+
+| Komponen                     | Biaya          | Keterangan                |
+| ---------------------------- | -------------- | ------------------------- |
+| Box Karton Custom (branding) | Rp 35,000      | Dengan logo SURIOTA       |
+| Foam Insert / Protection     | Rp 15,000      | Proteksi shipping         |
+| Manual + Quick Start Guide   | Rp 10,000      | Printed documentation     |
+| Sticker Garansi + QR Code    | Rp 5,000       | Untuk registrasi warranty |
+| Kabel Power (jika included)  | Rp 25,000      | Optional                  |
+| **Sub-total Packaging**      | **Rp 90,000**  |                           |
+| Shipping ke Supplier (avg)   | Rp 40,000      | JNE/J&T + asuransi        |
+| Admin & Handling             | Rp 10,000      | Processing order          |
+| After-sales Support Reserve  | Rp 10,000      | Warranty fund             |
+| **TOTAL BIAYA TAMBAHAN**     | **Rp 150,000** | Per unit                  |
+
+### COGS Lengkap untuk Distribusi
+
+| Komponen                            | Non-PoE          | PoE              |
+| ----------------------------------- | ---------------- | ---------------- |
+| Hardware COGS (dari BOM)            | Rp 1,430,000     | Rp 1,630,000     |
+| R&D Amortisasi (100 unit)           | Rp 200,000       | Rp 200,000       |
+| Packaging & Presentation            | Rp 90,000        | Rp 90,000        |
+| Shipping ke Supplier                | Rp 40,000        | Rp 40,000        |
+| Overhead Distribusi                 | Rp 20,000        | Rp 20,000        |
+| **TOTAL COGS (Distribution Ready)** | **Rp 1,780,000** | **Rp 1,980,000** |
+
+---
+
+### MAP (Minimum Advertised Price) Policy
+
+> **WAJIB DIPATUHI SEMUA SUPPLIER**
+
+| Model       | MAP (Harga Jual Minimum) | Keterangan                    |
+| ----------- | ------------------------ | ----------------------------- |
+| **Non-PoE** | **Rp 2,700,000**         | Tidak boleh jual lebih rendah |
+| **PoE**     | **Rp 3,100,000**         | Tidak boleh jual lebih rendah |
+
+**Sanksi Pelanggaran MAP:**
+
+1. Pelanggaran 1: Warning + bukti screenshot
+2. Pelanggaran 2: Suspend 1 bulan
+3. Pelanggaran 3: Terminate partnership
+
+---
+
+### Struktur Harga Supplier (Tier-based)
+
+#### Tier 1: Standard (Min Order 5 pcs)
+
+| Model   | Harga Supplier | Discount | Margin Supplier | Margin SURIOTA  |
+| ------- | -------------- | -------- | --------------- | --------------- |
+| Non-PoE | Rp 2,160,000   | 20%      | 20% (Rp 540K)   | 17.6% (Rp 380K) |
+| PoE     | Rp 2,480,000   | 20%      | 20% (Rp 620K)   | 20.2% (Rp 500K) |
+
+#### Tier 2: Silver (Min Order 10 pcs) ✓ REKOMENDASI
+
+| Model   | Harga Supplier   | Discount | Margin Supplier | Margin SURIOTA  |
+| ------- | ---------------- | -------- | --------------- | --------------- |
+| Non-PoE | **Rp 2,025,000** | 25%      | 25% (Rp 675K)   | 12.1% (Rp 245K) |
+| PoE     | **Rp 2,325,000** | 25%      | 25% (Rp 775K)   | 14.8% (Rp 345K) |
+
+#### Tier 3: Gold (Min Order 25 pcs)
+
+| Model   | Harga Supplier | Discount | Margin Supplier | Margin SURIOTA |
+| ------- | -------------- | -------- | --------------- | -------------- |
+| Non-PoE | Rp 1,890,000   | 30%      | 30% (Rp 810K)   | 5.8% (Rp 110K) |
+| PoE     | Rp 2,170,000   | 30%      | 30% (Rp 930K)   | 8.8% (Rp 190K) |
+
+---
+
+### Analisis Profit: Direct vs Via Supplier
+
+| Channel                    | Revenue/Unit | COGS         | Profit/Unit  | Margin | Effort |
+| -------------------------- | ------------ | ------------ | ------------ | ------ | ------ |
+| **Direct (Non-PoE)**       | Rp 2,700,000 | Rp 1,780,000 | Rp 920,000   | 34%    | Tinggi |
+| **Direct (PoE)**           | Rp 3,100,000 | Rp 1,980,000 | Rp 1,120,000 | 36%    | Tinggi |
+| **Via Supplier (Non-PoE)** | Rp 2,025,000 | Rp 1,780,000 | Rp 245,000   | 12%    | Rendah |
+| **Via Supplier (PoE)**     | Rp 2,325,000 | Rp 1,980,000 | Rp 345,000   | 15%    | Rendah |
+
+**Trade-off:** Margin lebih kecil via supplier, TAPI reach lebih luas dan effort lebih rendah.
+
+---
+
+### Proyeksi 5 Supplier - 1 Tahun
+
+**Asumsi:**
+
+- 5 Supplier aktif, masing-masing jual 10 unit/tahun
+- Mix: 60% Non-PoE, 40% PoE
+- Semua di Tier 2 (Discount 25%)
+
+| Metric                   | Value                         |
+| ------------------------ | ----------------------------- |
+| Total Unit               | 50 unit (30 Non-PoE + 20 PoE) |
+| Total Revenue SURIOTA    | Rp 107,250,000                |
+| Total COGS               | Rp 93,000,000                 |
+| **Gross Profit SURIOTA** | **Rp 14,250,000**             |
+| **Margin SURIOTA**       | **13.3%**                     |
+
+**Profit per Supplier:**
+| Metric | Value |
+|--------|-------|
+| Revenue (jual ke customer) | Rp 28,600,000 |
+| Cost (beli dari SURIOTA) | Rp 21,450,000 |
+| **Profit per Supplier** | **Rp 7,150,000/tahun** |
+| **Margin Supplier** | **25%** |
+
+---
+
+### Hybrid Distribution Model (Rekomendasi)
+
+| Channel                | Mix      | Target Unit | Revenue     | Profit     | Margin  |
+| ---------------------- | -------- | ----------- | ----------- | ---------- | ------- |
+| Direct Sales (SURIOTA) | 30%      | 24 unit     | Rp 69M      | Rp 25M     | 36%     |
+| Via 5 Suppliers        | 50%      | 40 unit     | Rp 86M      | Rp 11M     | 13%     |
+| Project / Tender       | 20%      | 16 unit     | Rp 46M      | Rp 12M     | 26%     |
+| **TOTAL**              | **100%** | **80 unit** | **Rp 201M** | **Rp 48M** | **24%** |
+
+**Benefit Hybrid Model:**
+
+- ✅ Jaga brand image via direct sales (high margin)
+- ✅ Scale via supplier network (volume)
+- ✅ Tidak terlalu dependent ke satu channel
+- ✅ Margin blended masih sehat (~24%)
+
+---
+
+### Perjanjian Supplier (Key Points)
+
+#### 1. MAP Policy
+
+- Harga jual MINIMUM = Rp 2,700,000 (Non-PoE) / Rp 3,100,000 (PoE)
+- Tidak boleh pasang harga lebih rendah di marketplace manapun
+- Boleh jual LEBIH TINGGI dari MAP
+
+#### 2. Territory / Channel Protection (Opsional)
+
+- Supplier A: Tokopedia
+- Supplier B: Shopee
+- Supplier C: Offline / Industri Jakarta
+- Supplier D: Offline / Industri Surabaya
+- Supplier E: Offline / Industri Bandung
+
+#### 3. Insentif Kepatuhan
+
+- Supplier yang tidak pernah melanggar MAP dalam 6 bulan: Bonus upgrade ke Tier berikutnya (discount +5%)
+- Top Performer (sales terbanyak): Co-branding opportunity
+
+#### 4. Syarat & Ketentuan
+
+- Payment: 100% sebelum kirim (untuk supplier baru)
+- Payment: NET 14 setelah kirim (untuk supplier trusted)
+- Garansi: SURIOTA handle langsung, supplier forward ke SURIOTA
+- Return: Hanya untuk DOA (Dead on Arrival) dalam 7 hari
 
 ---
 
@@ -1425,36 +1646,60 @@ Alert to Dashboard
 
 # Financial Projections
 
-## Proyeksi Keuangan
+## Proyeksi Keuangan (Updated December 2025)
 
-### Asumsi
+### Asumsi Baru
 
-| Parameter              | Value                         |
-| ---------------------- | ----------------------------- |
-| Target Sales (2 tahun) | 200 units                     |
-| Mix                    | 120 Standard : 80 PoE (60:40) |
-| Average Selling Price  | Rp 3,080,000 (weighted)       |
+| Parameter              | Value                        |
+| ---------------------- | ---------------------------- |
+| Target Sales (2 tahun) | 100 units (amortisasi basis) |
+| Mix                    | 60 Standard : 40 PoE (60:40) |
+| Average Selling Price  | Rp 2,860,000 (weighted)      |
+| Fully Loaded Cost Std  | Rp 1,630,000                 |
+| Fully Loaded Cost PoE  | Rp 1,830,000                 |
 
-### Revenue Projection
+### Revenue Projection (100 Units)
 
-| Item             | Standard (120 pcs) | PoE (80 pcs)   | **Total**          |
-| ---------------- | ------------------ | -------------- | ------------------ |
-| Unit Price       | Rp 2,800,000       | Rp 3,500,000   | -                  |
-| **Revenue**      | Rp 336,000,000     | Rp 280,000,000 | **Rp 616,000,000** |
-| COGS             | Rp 162,000,000     | Rp 124,000,000 | Rp 286,000,000     |
-| R&D (amortized)  | Rp 12,000,000      | Rp 8,000,000   | Rp 20,000,000      |
-| **Gross Profit** | Rp 162,000,000     | Rp 148,000,000 | **Rp 310,000,000** |
+| Item             | Standard (60 pcs) | PoE (40 pcs)   | **Total**          |
+| ---------------- | ----------------- | -------------- | ------------------ |
+| Unit Price       | Rp 2,700,000      | Rp 3,100,000   | -                  |
+| **Revenue**      | Rp 162,000,000    | Rp 124,000,000 | **Rp 286,000,000** |
+| COGS (Hardware)  | Rp 85,800,000     | Rp 65,200,000  | Rp 151,000,000     |
+| R&D (amortized)  | Rp 12,000,000     | Rp 8,000,000   | Rp 20,000,000      |
+| Total Cost       | Rp 97,800,000     | Rp 73,200,000  | Rp 171,000,000     |
+| **Gross Profit** | Rp 64,200,000     | Rp 50,800,000  | **Rp 115,000,000** |
 
 ### Key Metrics
 
 | Metric               | Value                     |
 | -------------------- | ------------------------- |
-| **Total Revenue**    | Rp 616,000,000 (~$38,500) |
-| **Total Cost**       | Rp 306,000,000 (~$19,125) |
-| **Gross Profit**     | Rp 310,000,000 (~$19,375) |
-| **Gross Margin**     | **50.3%**                 |
-| **Break-even Point** | 134 units                 |
-| **ROI**              | **101%**                  |
+| **Total Revenue**    | Rp 286,000,000 (~$17,875) |
+| **Total Cost**       | Rp 171,000,000 (~$10,687) |
+| **Gross Profit**     | Rp 115,000,000 (~$7,187)  |
+| **Gross Margin**     | **40.2%**                 |
+| **Break-even Point** | 82 units                  |
+
+### Break-even Calculation
+
+```
+Break-even = Fixed Cost / (Price - Variable Cost)
+           = Rp 20,000,000 / (Rp 2,860,000 - Rp 1,610,000)
+           = Rp 20,000,000 / Rp 1,250,000
+           = 16 units (untuk cover R&D amortisasi)
+
+Full Break-even (including all sunk costs):
+           = Rp 270,000,000 / Rp 1,250,000
+           = 216 units (jika full R&D cost diperhitungkan)
+```
+
+### Scenario Analysis
+
+| Scenario         | Units | Revenue | Profit  | Margin | Notes            |
+| ---------------- | ----- | ------- | ------- | ------ | ---------------- |
+| **Conservative** | 50    | Rp 143M | Rp 51M  | 36%    | Minimum viable   |
+| **Target**       | 100   | Rp 286M | Rp 115M | 40%    | Amortisasi basis |
+| **Optimistic**   | 150   | Rp 429M | Rp 178M | 42%    | Grow from target |
+| **Stretch**      | 200   | Rp 572M | Rp 242M | 42%    | Original target  |
 
 ---
 

@@ -7,15 +7,17 @@ This repository contains business analysis documentation for the **SRT-MGATE-121
 ## Product Information
 
 ### SRT-MGATE-1210 Standard Version
-- **Price**: Rp 2,800,000 (~$175 USD)
-- **COGS**: Rp 1,450,000 (Fully Loaded Cost)
-- **Gross Margin**: 48%
+
+- **Price**: Rp 2,700,000 (~$169 USD)
+- **COGS**: Rp 1,630,000 (Fully Loaded Cost)
+- **Gross Margin**: 40%
 - **Features**: Dual RS-485 with ESD protection, WiFi WPA3, BLE 5.0, Ethernet 10/100, RTC with battery backup, 9 LED indicators
 
 ### SRT-MGATE-1210-POE Version
-- **Price**: Rp 3,500,000 (~$219 USD)
-- **COGS**: Rp 1,650,000 (Fully Loaded Cost)
-- **Gross Margin**: 53%
+
+- **Price**: Rp 3,100,000 (~$194 USD)
+- **COGS**: Rp 1,830,000 (Fully Loaded Cost)
+- **Gross Margin**: 41%
 - **Additional Feature**: IEEE 802.3af/at PoE support (9W, 36-57V) with auto-switch
 
 ## Key Technical Specifications
@@ -50,45 +52,107 @@ This repository contains business analysis documentation for the **SRT-MGATE-121
 
 SURIOTA targets the **mid-range market** with premium features:
 
-| Competitor | Model | Price (Tokopedia) | vs SURIOTA |
-|------------|-------|-------------------|------------|
-| USR-IOT | N720-ETH | Rp 3,500,000 | SURIOTA 20% cheaper, +WiFi +BLE |
-| USR-IOT | N540 H7-4 | Rp 1,820,000 | SURIOTA +WiFi +BLE +RTC +ESD |
-| BLIIoT | BL100 | Rp 3,373,000 | SURIOTA 17% cheaper, +BLE +RTC |
-| ICP DAS | tGW-725 | Rp 3,450,000 | SURIOTA 19% cheaper, +MQTT +WiFi +BLE |
-| Moxa | AIG-101-T | Rp 8,956,000 | SURIOTA 69% cheaper, +WiFi +BLE |
+| Competitor | Model     | Price (Tokopedia) | vs SURIOTA                                   |
+| ---------- | --------- | ----------------- | -------------------------------------------- |
+| USR-IOT    | N720-ETH  | Rp 3,500,000      | SURIOTA **23% cheaper**, +WiFi +BLE          |
+| USR-IOT    | N540 H7-4 | Rp 1,820,000      | SURIOTA +48%, justified: WiFi +BLE +RTC +ESD |
+| BLIIoT     | BL100     | Rp 3,373,000      | SURIOTA **20% cheaper**, +BLE +RTC           |
+| ICP DAS    | tGW-725   | Rp 3,450,000      | SURIOTA **22% cheaper**, +MQTT +WiFi +BLE    |
+| Moxa       | AIG-101-T | Rp 8,956,000      | SURIOTA **70% cheaper**, +WiFi +BLE          |
 
 **Key Insight**: SURIOTA is the ONLY Modbus-to-MQTT gateway in Indonesia with WiFi + BLE + RTC
 
 ## Financial Metrics
 
 - **Exchange Rate**: 1 USD = Rp 16,648 (actual) / Rp 16,000 (rounded)
-- **Break-even**: 134 units
-- **Target Sales**: 200 units (2 years)
+- **Break-even**: 82 units
+- **Target Sales**: 100 units (Amortisasi basis, 2 tahun)
+
+## Supplier/Distributor Strategy
+
+### Distribution Model: Hybrid (Direct + Supplier + Project)
+
+- **Direct Sales**: 40% (High-value customers, custom solutions)
+- **Supplier Channel**: 40% (5 suppliers across regions)
+- **Project/Tender**: 20% (Government, corporate tenders)
+
+### Supplier Pricing (MAP Policy)
+
+| Tier       | Min Order | Discount | Non-PoE Price    | PoE Price        |
+| ---------- | --------- | -------- | ---------------- | ---------------- |
+| Tier 1     | 5 unit    | 20%      | Rp 2,160,000     | Rp 2,480,000     |
+| **Tier 2** | 10 unit   | **25%**  | **Rp 2,025,000** | **Rp 2,325,000** |
+| Tier 3     | 25 unit   | 30%      | Rp 1,890,000     | Rp 2,170,000     |
+
+### MAP (Minimum Advertised Price)
+
+- **Non-PoE**: Rp 2,700,000 (sama dengan harga direct SURIOTA)
+- **PoE**: Rp 3,100,000 (sama dengan harga direct SURIOTA)
+- Supplier DILARANG menjual dibawah MAP
+
+### Additional Distribution Costs
+
+- Packaging: Rp 90,000/unit
+- Shipping: Rp 40,000/unit (avg)
+- Overhead: Rp 20,000/unit
+- **Total**: Rp 150,000/unit
 
 ## File Structure
 
 ```
 SRT-MGATE-1210-Business-Analysis/
-├── README.md                              # Repository overview
-├── CLAUDE.md                              # This context file
-└── SRT-MGATE-1210_BUSINESS_ANALYSIS.md    # Full analysis document (v5.4)
+├── README.md                                   # Repository overview
+├── CLAUDE.md                                   # This context file
+│
+├── docs/                                       # Documentation folder
+│   ├── SRT-MGATE-1210_BUSINESS_ANALYSIS.md     # Main business document (v6.1)
+│   ├── FAQ_TEMPLATE.md                         # FAQ template (v1.1)
+│   └── ROASTING_AND_RESPONSE.md                # Objection handling guide (v1.1)
+│
+├── data/                                       # Data files
+│   ├── BOM_MODBUS Gateway IoT BD_HR.xlsx       # Bill of Materials
+│   ├── export_project_20251211_065536.xls      # LCSC BOM export
+│   └── Kalkulasi Bg Ilham.jpeg                 # Cost calculation reference
+│
+└── .claude/                                    # Claude Code configuration
+    └── settings.local.json
 ```
 
-## Main Document Contents (v5.4)
+## Documentation Files
+
+### Main Document (docs/SRT-MGATE-1210_BUSINESS_ANALYSIS.md) - v6.1
 
 1. Executive Summary & Pricing Recommendation
 2. Product Specifications (Updated with RTC, 9 LED, ESD)
-3. COGS Analysis (Actual production data)
+3. COGS Analysis (Updated with BOM LCSC data & R&D amortization)
 4. Competitor Analysis (5 Modbus-to-MQTT competitors)
 5. Feature Comparison Matrix
-6. Pricing Strategy & Volume Discounts
+6. Pricing Strategy & Volume Discounts (Updated: Opsi B - Margin 40%)
 7. USP Breakdown
 8. Sales & Marketing Guide (16 scenarios)
 9. Objection Handling
 10. Brand Awareness Strategy
-11. Financial Projections
-12. Technical Specifications Appendix
+11. Financial Projections (Updated: 100 unit target, scenario analysis)
+12. Supplier/Distributor Strategy (MAP policy & tier pricing)
+13. Technical Specifications Appendix
+
+### FAQ Template (docs/FAQ_TEMPLATE.md) - v1.1
+
+- Standar format jawaban untuk customer
+- Quick response card untuk WhatsApp/Chat
+- FAQ tentang harga, garansi, fitur, supplier program
+
+### Roasting & Response Guide (docs/ROASTING_AND_RESPONSE.md) - v1.1
+
+- Panduan menghadapi kritik keras dari customer
+- 8 kategori: Brand, Technical, Price, Support, Features, Business, Use Case, Supplier
+- Quick reference card untuk one-liner responses
+
+### Data Files (data/)
+
+- **BOM_MODBUS Gateway IoT BD_HR.xlsx** - Bill of Materials dari LCSC
+- **export_project_20251211_065536.xls** - Export BOM dengan pricing
+- **Kalkulasi Bg Ilham.jpeg** - Reference gambar kalkulasi
 
 ## Notes for AI Assistant
 
@@ -109,6 +173,7 @@ SRT-MGATE-1210-Business-Analysis/
 ## Contact
 
 PT Surya Inovasi Prioritas (SURIOTA)
+
 - Email: sales@suriota.com
 - Website: www.suriota.com
 - Phone: +62 858-3567-2476
