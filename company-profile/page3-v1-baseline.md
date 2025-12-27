@@ -4,7 +4,7 @@
 
 > **Target Score:** 6.5/10
 > **Version:** 1.1
-> **Last Updated:** December 2024
+> **Last Updated:** December 2025
 > **Purpose:** Professional, clear, consistent with CIPTA values
 
 ---
@@ -198,8 +198,8 @@ keberlanjutan operasional.
 
 | Version | Date | Changes |
 |---------|------|--------|
-| 1.0 | Dec 2024 | Initial version - Score 7 baseline |
-| 1.1 | Dec 2024 | Removed Trust Signals - Score 6.5 |
+| 1.0 | Dec 2025 | Initial version - Score 7 baseline |
+| 1.1 | Dec 2025 | Removed Trust Signals - Score 6.5 |
 
 ---
 
