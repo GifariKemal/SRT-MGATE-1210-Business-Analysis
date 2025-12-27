@@ -48,8 +48,13 @@ SURIOTA-Business-Analysis/
 ├── CLAUDE.md                                    # AI context file
 │
 ├── company-profile/                             # Company Profile documentation
-│   ├── page3-v1-baseline.md                     # About Us - Baseline (Score 6.5)
-│   └── page3-v2-enhanced.md                     # About Us - Enhanced (Score 7.5)
+│   ├── page3/                                   # About Us page
+│   │   ├── v1-baseline.md                       # Baseline (Score 6.5)
+│   │   └── v2-enhanced.md                       # Enhanced (Score 7.5)
+│   │
+│   └── page4/                                   # Vision & Mission page
+│       ├── v1-baseline.md                       # Baseline (Score 6.0)
+│       └── v2-enhanced.md                       # Enhanced (Score 8.2)
 │
 ├── products/                                    # Product business analysis
 │   └── SRT-MGATE-1210/                          # Modbus Gateway
@@ -77,8 +82,20 @@ Two versions available for Company Profile Page 3:
 
 | Version | File | Score | Key Features |
 |---------|------|:-----:|--------------|
-| V1 Baseline | `page3-v1-baseline.md` | 6.5/10 | CIPTA values, basic metrics |
-| V2 Enhanced | `page3-v2-enhanced.md` | 7.5/10 | + Bold hook + Market data ($2.7B) |
+| V1 Baseline | `page3/v1-baseline.md` | 6.5/10 | CIPTA values, basic metrics |
+| V2 Enhanced | `page3/v2-enhanced.md` | 7.5/10 | + Bold hook + Market data ($2.7B) |
+
+### Page 4 - Vision & Mission
+
+Two versions available for Company Profile Page 4:
+
+| Version | File | Score | Key Features |
+|---------|------|:-----:|--------------|
+| V1 Baseline | `page4/v1-baseline.md` | 6.0/10 | Current analysis (32 words vision) |
+| V2 Enhanced | `page4/v2-enhanced.md` | 8.2/10 | Improved 9-word vision + CIPTA-aligned mission |
+
+**Recommended Vision (V2):**
+> "Empowering Indonesian industries to thrive in the connected era."
 
 ---
 

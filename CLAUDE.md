@@ -43,8 +43,13 @@ SURIOTA-Business-Analysis/
 ├── CLAUDE.md                                    # This AI context file
 │
 ├── company-profile/                             # Company Profile documentation
-│   ├── page3-v1-baseline.md                     # About Us - Baseline version (Score 6.5)
-│   └── page3-v2-enhanced.md                     # About Us - Enhanced version (Score 7.5)
+│   ├── page3/                                   # About Us page
+│   │   ├── v1-baseline.md                       # About Us - Baseline (Score 6.5)
+│   │   └── v2-enhanced.md                       # About Us - Enhanced (Score 7.5)
+│   │
+│   └── page4/                                   # Vision & Mission page
+│       ├── v1-baseline.md                       # Vision & Mission - Baseline (Score 6.0)
+│       └── v2-enhanced.md                       # Vision & Mission - Enhanced (Score 8.2)
 │
 ├── products/                                    # Product business analysis
 │   └── SRT-MGATE-1210/                          # Modbus Gateway product
@@ -66,20 +71,43 @@ SURIOTA-Business-Analysis/
 
 ## Company Profile Documentation
 
-### Page 3 - About Us (company-profile/)
+### Page 3 - About Us (company-profile/page3/)
 
 Two versions available for Company Profile Page 3:
 
 | Version | File | Score | Description |
 |---------|------|:-----:|-------------|
-| V1 Baseline | `page3-v1-baseline.md` | 6.5/10 | Professional baseline with CIPTA values |
-| V2 Enhanced | `page3-v2-enhanced.md` | 7.5/10 | + Bold hook + Market data ($2.7B) |
+| V1 Baseline | `v1-baseline.md` | 6.5/10 | Professional baseline with CIPTA values |
+| V2 Enhanced | `v2-enhanced.md` | 7.5/10 | + Bold hook + Market data ($2.7B) |
 
 **Key Differences:**
 - V2 adds bold contrarian opening hook
 - V2 includes validated market size ($2.7B from Statista)
 - Both use same professional company description
 - Both align with CIPTA core values
+
+---
+
+### Page 4 - Vision & Mission (company-profile/page4/)
+
+Two versions available for Company Profile Page 4:
+
+| Version | File | Score | Description |
+|---------|------|:-----:|-------------|
+| V1 Baseline | `v1-baseline.md` | 6.0/10 | Current version analysis |
+| V2 Enhanced | `v2-enhanced.md` | 8.2/10 | Improved Vision (9 words) + Enhanced Mission |
+
+**Key Issues (V1):**
+- Vision too long (32 words vs max 20)
+- "And also" grammatically awkward
+- Multiple concepts in one sentence
+- Missing beneficiary focus in Mission
+
+**Key Improvements (V2):**
+- Vision shortened to 9 words: "Empowering Indonesian industries to thrive in the connected era."
+- Mission includes explicit beneficiaries
+- CIPTA values linked in Mission point 5
+- Specific sectors mentioned (Industrial, Energy, Logistics, Maritime)
 
 ---
 
@@ -146,11 +174,18 @@ SURIOTA targets the **mid-range market** with premium features:
 
 ## Notes for AI Assistant
 
-### Company Profile
+### Company Profile - Page 3 (About Us)
 - Page 3 must align with CIPTA core values
 - Market data validated: $2.7B from Statista (Industrial IoT Indonesia 2025)
 - No Trust Signals or Testimonials in current versions
 - Description should be professional, not dramatic
+
+### Company Profile - Page 4 (Vision & Mission)
+- Vision statement should be max 20 words (best practice: 5-14 words)
+- Mission should answer: What you do + Who benefits + How
+- Value taglines (Integrity, Precision, Adaptation) remain unchanged
+- Enhanced vision: "Empowering Indonesian industries to thrive in the connected era."
+- Focus sectors: Industrial, Energy, Logistics, Maritime
 
 ### Product (SRT-MGATE-1210)
 - **2kV Isolation claim REMOVED** - Schematic shows MAX485ESA+T (non-isolated)
