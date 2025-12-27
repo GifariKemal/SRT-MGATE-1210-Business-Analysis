@@ -43,13 +43,20 @@ SURIOTA-Business-Analysis/
 ├── CLAUDE.md                                    # This AI context file
 │
 ├── company-profile/                             # Company Profile documentation
-│   ├── page3/                                   # About Us page
-│   │   ├── v1-baseline.md                       # About Us - Baseline (Score 6.5)
-│   │   └── v2-enhanced.md                       # About Us - Enhanced (Score 7.5)
+│   ├── MARKET_RESEARCH_FINDINGS.md              # Comprehensive market research
 │   │
-│   └── page4/                                   # Vision & Mission page
-│       ├── v1-baseline.md                       # Vision & Mission - Baseline (Score 6.0)
-│       └── v2-enhanced.md                       # Vision & Mission - Enhanced (Score 8.2)
+│   ├── page3/                                   # About Us page
+│   │   ├── v1-baseline.md                       # Baseline (Score 6.5)
+│   │   ├── v2-enhanced.md                       # Enhanced (Score 7.5)
+│   │   └── v3-final.md                          # Final Bilingual EN/ID (Score 8.5)
+│   │
+│   ├── page4/                                   # Vision & Mission page
+│   │   ├── v1-baseline.md                       # Baseline (Score 6.0)
+│   │   ├── v2-enhanced.md                       # Enhanced (Score 8.2)
+│   │   └── v3-final.md                          # Final Bilingual EN/ID (Score 8.5)
+│   │
+│   └── page5/                                   # Services page
+│       └── v1-services.md                       # Final Bilingual EN/ID (Score 8.5)
 │
 ├── products/                                    # Product business analysis
 │   └── SRT-MGATE-1210/                          # Modbus Gateway product
@@ -71,43 +78,69 @@ SURIOTA-Business-Analysis/
 
 ## Company Profile Documentation
 
-### Page 3 - About Us (company-profile/page3/)
+### Market Research (company-profile/MARKET_RESEARCH_FINDINGS.md)
 
-Two versions available for Company Profile Page 3:
+Comprehensive research covering:
+- Indonesia IIoT Market: $2.7B (2025), 15% CAGR
+- Digital Economy: $130B by 2025
+- Startup Ecosystem Challenges (eFishery/TaniHub scandals, 95% funding collapse)
+- Batam Strategic Advantages (FTZ, Singapore proximity)
+- Southeast Asia Expansion Opportunities (26% CAGR Asia Pacific)
+- Industrial IoT Services Demand & Use Cases
+
+---
+
+### Page 3 - About Us (company-profile/page3/)
 
 | Version | File | Score | Description |
 |---------|------|:-----:|-------------|
 | V1 Baseline | `v1-baseline.md` | 6.5/10 | Professional baseline with CIPTA values |
-| V2 Enhanced | `v2-enhanced.md` | 7.5/10 | + Bold hook + Market data ($2.7B) |
+| V2 Enhanced | `v2-enhanced.md` | 7.5/10 | + Bold hook + Market data |
+| **V3 Final** | `v3-final.md` | **8.5/10** | **Bilingual EN/ID, Innovation-focused, No geo limit** |
 
-**Key Differences:**
-- V2 adds bold contrarian opening hook
-- V2 includes validated market size ($2.7B from Statista)
-- Both use same professional company description
-- Both align with CIPTA core values
+**V3 Key Changes:**
+- Innovation-driven narrative (not market-driven)
+- Emphasizes independence and self-funding
+- No geographic limitations for expansion potential
+- Governance as differentiator from scandal-prone startups
+- Bilingual for team understanding
 
 ---
 
 ### Page 4 - Vision & Mission (company-profile/page4/)
 
-Two versions available for Company Profile Page 4:
+| Version | File | Score | Description |
+|---------|------|:-----:|-------------|
+| V1 Baseline | `v1-baseline.md` | 6.0/10 | Current version analysis (32 words) |
+| V2 Enhanced | `v2-enhanced.md` | 8.2/10 | 9-word vision (Indonesia-focused) |
+| **V3 Final** | `v3-final.md` | **8.5/10** | **Bilingual EN/ID, Global 6-word vision** |
+
+**V3 Vision (Recommended):**
+> "Transforming industries through smart, connected solutions."
+
+**V3 Key Changes:**
+- Vision: 6 words, global scope, no geographic limitation
+- Mission: 5 action verbs (DELIVER, ENABLE, BUILD, DEVELOP, UPHOLD)
+- Integrity emphasized (differentiator from scandal-prone startups)
+- Bilingual for team understanding
+
+---
+
+### Page 5 - Services (company-profile/page5/)
 
 | Version | File | Score | Description |
 |---------|------|:-----:|-------------|
-| V1 Baseline | `v1-baseline.md` | 6.0/10 | Current version analysis |
-| V2 Enhanced | `v2-enhanced.md` | 8.2/10 | Improved Vision (9 words) + Enhanced Mission |
+| **V1 Final** | `v1-services.md` | **8.5/10** | **Bilingual EN/ID, 6 service categories** |
 
-**Key Issues (V1):**
-- Vision too long (32 words vs max 20)
-- "And also" grammatically awkward
-- Multiple concepts in one sentence
-- Missing beneficiary focus in Mission
+**Services Offered:**
+1. System Integration - PLC/SCADA to Cloud, Modbus to MQTT
+2. Predictive Maintenance - Vibration/temperature monitoring, alerting
+3. Remote Monitoring & Control - Cloud dashboards, mobile apps
+4. Asset Tracking & Management - GPS, utilization analytics
+5. Energy Management - Power monitoring, carbon footprint
+6. Consulting & Implementation - Assessment, POC, training
 
-**Key Improvements (V2):**
-- Vision shortened to 9 words: "Empowering Indonesian industries to thrive in the connected era."
-- Mission includes explicit beneficiaries
-- CIPTA values linked in Mission point 5
-- Specific sectors mentioned (Industrial, Energy, Logistics, Maritime)
+**Industries Served:** Manufacturing, Energy, Logistics, Maritime, Oil & Gas, Building Management
 
 ---
 
@@ -175,17 +208,26 @@ SURIOTA targets the **mid-range market** with premium features:
 ## Notes for AI Assistant
 
 ### Company Profile - Page 3 (About Us)
-- Page 3 must align with CIPTA core values
-- Market data validated: $2.7B from Statista (Industrial IoT Indonesia 2025)
-- No Trust Signals or Testimonials in current versions
-- Description should be professional, not dramatic
+- V3 Final is the recommended version (bilingual EN/ID)
+- Innovation-focused narrative, NOT market-driven
+- Emphasizes independence and self-funding as differentiators
+- No geographic limitations - allows for regional expansion
+- CIPTA core values maintained
 
 ### Company Profile - Page 4 (Vision & Mission)
-- Vision statement should be max 20 words (best practice: 5-14 words)
-- Mission should answer: What you do + Who benefits + How
-- Value taglines (Integrity, Precision, Adaptation) remain unchanged
-- Enhanced vision: "Empowering Indonesian industries to thrive in the connected era."
-- Focus sectors: Industrial, Energy, Logistics, Maritime
+- V3 Final is the recommended version (bilingual EN/ID)
+- Vision: "Transforming industries through smart, connected solutions." (6 words, global)
+- NO "Indonesia" in vision - company is independent, self-funded, aspires to regional presence
+- Mission uses 5 strong action verbs: DELIVER, ENABLE, BUILD, DEVELOP, UPHOLD
+- Integrity emphasized as differentiator from scandal-prone Indonesian startups
+- Value taglines remain: Integrity, Precision, Adaptation
+
+### Company Profile - Page 5 (Services)
+- V1 Final is the recommended version (bilingual EN/ID)
+- 6 service categories aligned with market research findings
+- Services match IIoT industry demand (predictive maintenance 50%+, etc.)
+- Industries: Manufacturing, Energy, Logistics, Maritime, Oil & Gas, Building Management
+- Protocol alignment: MQTT (55% industry usage), Modbus (core competency)
 
 ### Product (SRT-MGATE-1210)
 - **2kV Isolation claim REMOVED** - Schematic shows MAX485ESA+T (non-isolated)
