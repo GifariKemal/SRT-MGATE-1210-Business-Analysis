@@ -1,9 +1,9 @@
-# Company Profile Page 3 - Version 1 (Score 7/10)
+# Company Profile Page 3 - Version 1 (Score 6.5/10)
 
 ## Suriota About Us Page - Professional Baseline
 
-> **Target Score:** 7.3/10
-> **Version:** 1.0
+> **Target Score:** 6.5/10
+> **Version:** 1.1
 > **Last Updated:** December 2024
 > **Purpose:** Professional, clear, consistent with CIPTA values
 
@@ -12,10 +12,9 @@
 ## Overview
 
 This version focuses on:
-- ✅ Alignment between CEO quote and CIPTA core values
-- ✅ Clear company description
-- ✅ Basic credibility metrics
-- ✅ Trust signals (client logos, certifications)
+- Alignment between CEO quote and CIPTA core values
+- Clear company description
+- Basic credibility metrics
 
 ---
 
@@ -27,7 +26,6 @@ This version focuses on:
 │  SECTION 2: CEO SPOTLIGHT + QUOTE                                           │
 │  SECTION 3: CREDIBILITY METRICS                                             │
 │  SECTION 4: COMPANY DESCRIPTION                                             │
-│  SECTION 5: TRUST SIGNALS                                                   │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -156,58 +154,28 @@ keberlanjutan operasional.
 
 ---
 
-## Section 5: Trust Signals
-
-### Client Logos
-```
-Trusted by:
-[CATERPILLAR]  [WIKA]  [SANTARLI]  [PANBIL]  [SKYNET]
-```
-
-### Certification Logos
-```
-Certified:
-[CE]  [KOMUNITAS MODBUS INDONESIA]
-```
-
----
-
 ## Score Breakdown by Stakeholder
 
 | Stakeholder | Score | Notes |
 |-------------|:-----:|-------|
-| Potential Client | 7.5 | Has basics, needs testimonial |
-| Potential Investor | 7.0 | Needs market size, growth data |
-| Potential Employee | 7.5 | Good values, needs culture showcase |
-| Potential Partner | 7.0 | Clear capability, needs differentiator |
-| Educational Institution | 7.5 | Good innovation focus |
-| Media / Journalist | 7.5 | Needs bolder hook |
-| Government / Regulator | 7.0 | Good local focus |
-| **Average** | **7.3** | |
+| Potential Client | 6.5 | Has basics, needs social proof |
+| Potential Investor | 6.0 | Needs market size, growth data |
+| Potential Employee | 7.0 | Good values, needs culture showcase |
+| Potential Partner | 6.0 | Clear capability, needs differentiator |
+| Educational Institution | 7.0 | Good innovation focus |
+| Media / Journalist | 6.5 | Needs bolder hook |
+| Government / Regulator | 6.5 | Good local focus |
+| **Average** | **6.5** | |
 
 ---
 
-## What's Missing for Score 8-9?
+## What's Missing for Score 8+?
 
-1. ❌ Bold, contrarian opening hook
-2. ❌ Market size / opportunity data
-3. ❌ Client testimonial with ROI
-4. ❌ Ambitious mission statement with timeline
-5. ❌ Clear competitive differentiator
-6. ❌ Newsworthy achievement claim
-7. ❌ Dramatic origin story
-
----
-
-## Comparison: Current vs Version 1
-
-| Element | Current Page 3 | Version 1 (This) |
-|---------|----------------|------------------|
-| **CEO Quote Values** | Discipline, Commitment, Empathy | CIPTA (aligned with Page 4) |
-| **Origin Story** | None | "In 2023, I founded..." |
-| **Metrics** | None | 4 key metrics |
-| **Trust Signals** | None | Client logos + certifications |
-| **Subheadline** | Generic | Specific differentiator |
+1. Bold, contrarian opening hook
+2. Market size / opportunity data
+3. Clear competitive differentiator
+4. Newsworthy achievement claim
+5. Dramatic origin story
 
 ---
 
@@ -231,6 +199,7 @@ Certified:
 | Version | Date | Changes |
 |---------|------|--------|
 | 1.0 | Dec 2024 | Initial version - Score 7 baseline |
+| 1.1 | Dec 2024 | Removed Trust Signals - Score 6.5 |
 
 ---
 
