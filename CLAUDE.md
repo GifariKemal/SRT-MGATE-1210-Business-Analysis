@@ -82,19 +82,19 @@ SURIOTA-Business-Analysis/
 │   │       └── TROUBLESHOOTING_GUIDE.md         # Troubleshooting reference
 │   │
 │   └── SURGE/                                   # SURGE Platform (SaaS Software)
-│       ├── README.md                            # Documentation index
-│       ├── BUSINESS_ANALYSIS.md                 # Main business document (v1.0)
+│       ├── README.md                            # Documentation index (v2.0)
+│       ├── BUSINESS_ANALYSIS.md                 # Main business document (v2.0)
 │       │
 │       ├── sales/                               # Sales & Marketing documents
-│       │   ├── DEMO_SCRIPT.md                   # Product demo script (30-45 min)
+│       │   ├── DEMO_SCRIPT.md                   # Product demo script (v2.0)
 │       │   ├── COMPETITOR_BATTLECARD.md         # Competitive selling reference
 │       │   ├── CASE_STUDY_TEMPLATE.md           # Customer success story template
-│       │   ├── ROI_CALCULATOR.md                # ROI calculation worksheet
-│       │   ├── FAQ_TEMPLATE.md                  # FAQ template (v1.0)
-│       │   └── ROASTING_AND_RESPONSE.md         # Objection handling guide (v1.0)
+│       │   ├── ROI_CALCULATOR.md                # ROI calculation worksheet (v2.0)
+│       │   ├── FAQ_TEMPLATE.md                  # FAQ template (v2.0)
+│       │   └── ROASTING_AND_RESPONSE.md         # Objection handling guide (v2.0)
 │       │
 │       ├── onboarding/                          # Customer onboarding documents
-│       │   ├── ONBOARDING_CHECKLIST.md          # Implementation checklist
+│       │   ├── ONBOARDING_CHECKLIST.md          # Implementation checklist (v2.0)
 │       │   └── KLHK_COMPLIANCE_GUIDE.md         # KLHK compliance guide
 │       │
 │       └── technical/                           # Technical documentation
@@ -286,12 +286,17 @@ SURIOTA targets the **mid-range market** with premium features:
 
 ### Pricing
 
-| Plan | Price/Month | Parameters | Locations | Retention |
-|------|-------------|------------|-----------|-----------|
-| Trial | Free | 5 | 1 | 30 days |
-| Starter | $29 (Rp 464K) | 10 | 3 | 90 days |
-| Business | $99 (Rp 1.58M) | 25 | 10 | 1 year |
-| Professional | $299 (Rp 4.78M) | Unlimited | Unlimited | 3 years |
+| Plan | Price/Month | Tag Data | Locations | Logging | Retention |
+|------|-------------|:--------:|:---------:|:-------:|:---------:|
+| Trial | Free | 5 | Unlimited | 2 min | 30 days |
+| Starter | $29 (Rp 464K) | 30 | Unlimited | 1 min | 1 year |
+| Business | $99 (Rp 1.58M) | 100 | Unlimited | 1 min | 2 years |
+| Professional | $299 (Rp 4.78M) | Unlimited | Unlimited | Custom | 5 years |
+
+**Key Notes:**
+- Tag Data = jumlah parameter monitoring (pH, kWh, GPS, dll)
+- **Unlimited locations di semua tier** (unique differentiator!)
+- Trial = Private access, kontak tim SURIOTA untuk demo account
 
 ### Key Technical Specifications
 
@@ -306,12 +311,14 @@ SURIOTA targets the **mid-range market** with premium features:
 
 ### Unique Selling Propositions (USP)
 
-1. **3 Industry Modules** - Water, Energy, Vessel in one platform
-2. **KLHK Compliance** - Ready for Indonesian environmental reporting
-3. **Multi-tenant** - Full data isolation per organization
-4. **Bahasa Indonesia** - Full localization + WIB timezone
-5. **Local Support** - WhatsApp + Phone support in Indonesia
-6. **Hardware Integration** - Pre-integrated with SRT-MGATE-1210 gateway
+1. **Unlimited Locations** - All tiers include unlimited locations (unique!)
+2. **3 Industry Modules** - Water, Energy, Vessel in one platform
+3. **KLHK Compliance** - Ready for Indonesian environmental reporting
+4. **Multi-tenant** - Full data isolation per organization
+5. **Bahasa Indonesia** - Full localization + WIB timezone
+6. **Local Support** - WhatsApp + Phone support in Indonesia
+7. **Hardware Integration** - Pre-integrated with SRT-MGATE-1210 gateway
+8. **Affordable** - 70% cheaper than ThingsBoard
 
 ### Competitor Positioning
 
@@ -389,12 +396,18 @@ SURIOTA targets the **mid-range market** with premium features:
 
 ### Product (SURGE Platform)
 - **3 Integrated Modules**: Water Analytics, Energy Mapping, Vessel Tracking
-- **Pricing**: Trial (Free), Starter ($29), Business ($99), Professional ($299)
-- **Key differentiator**: KLHK Compliance + Bahasa Indonesia + Local Support
+- **Pricing v2.0**:
+  - Trial: Free, 5 tags, Unlimited locations, 2-min logging, 30-day retention, **Private access**
+  - Starter: $29, 30 tags, Unlimited locations, 1-min logging, 1-year retention
+  - Business: $99, 100 tags, Unlimited locations, 1-min logging, 2-year retention
+  - Professional: $299, Unlimited tags, Unlimited locations, Custom logging, 5-year retention
+- **Key differentiator**: **Unlimited locations in ALL tiers** + KLHK Compliance + Local Support
+- **Tag Data** = jumlah parameter monitoring (pH, kWh, GPS, dll)
 - **Competitors**: ThingsBoard, Grafana, Datacake, Blynk, Ubidots
 - **Architecture**: Next.js 15 + NestJS + PostgreSQL + TimescaleDB
 - **Integration**: Pre-integrated with SRT-MGATE-1210 gateway
 - **Focus on**: SMB to Enterprise industrial monitoring
+- **Trial access**: Private/invitation only - contact SURIOTA team
 
 ---
 
